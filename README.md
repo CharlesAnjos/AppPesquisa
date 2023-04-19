@@ -1,0 +1,1 @@
+Aplicativo usando seekbar e autocomplete text bar para pesquisar informações sobre cidades, sob tutoria do prof. Fagno para a matéria de PDMI.
