@@ -29,6 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:enabled="true"
         android:text="Cidade"
         app:layout_constraintBottom_toTopOf="@+id/satisfacaoSeekbarLabel"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,8 +55,30 @@
         android:layout_marginTop="20dp"
         android:indeterminate="false"
         android:max="2"
+        app:layout_constraintBottom_toTopOf="@+id/imgSatisfacao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/satisfacaoSeekbarLabel" />
+
+    <ImageView
+        android:id="@+id/imgSatisfacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/satisfacao"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/botaoEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Enviar"
+        app:layout_constraintTop_toBottomOf="@+id/imgSatisfacao"
+        tools:layout_editor_absoluteX="158dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
